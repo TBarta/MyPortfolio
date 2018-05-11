@@ -1,0 +1,382 @@
+$brown : #5B402F;
+$blue :  #4F85B2;
+$light : #CEBFA7;
+$dark : #1A2127;
+$olive : #2F1B13;
+$bg :  rgb(255, 245, 225);
+$bar_height : 2.5rem;
+$size: 45px;
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body {
+    background-color: rgb(86, 82, 82);
+}
+
+.container {
+    width: 960px;
+    background-color: $bg;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3rem;
+   
+}
+
+.header{
+    background-color: $bg;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    font-size: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+#logo1 {
+    margin-top: 0;
+    margin-left: 50px;
+    color: #2F1B13;
+    font-size: 3rem;
+    text-align: center;
+    margin-right: 2px;
+    font-family: 'Yellowtail', cursive;
+    transform: rotate(-20deg);
+}
+#logo2 {
+    margin-right: 6rem;
+    color: $brown;
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Yellowtail', cursive;
+    transform: rotate(-15deg)
+    
+}
+nav{
+background-color:#192026;
+font-size:0;
+color:$light;
+width: 80%;
+cursor: pointer;
+}
+nav ul {
+    padding:0;
+    display: flex;
+    flex-direction: row;
+}
+
+nav li {
+list-style-type: none;
+font-size:1rem;
+width: 20%;
+margin:0;
+text-align: center;
+padding:1.5rem;
+border-left: 1px solid $light;
+}
+nav li a {
+    text-decoration: none;
+    color: $light;
+    width: 20%;
+}
+nav li:hover {
+    background-color: $blue;
+    transition: all ease-in-out 300ms;
+    -webkit-transition: all ease-in-out 400ms;
+}
+nav li:first-child {
+    border:none;
+}   
+.image{
+    background-image: url("../img/background.jpg");
+    height: 450px;
+    padding-top: 260px;
+    padding-left: 200px;
+    padding-right:40px; 
+}
+
+.banner .greeting {
+    font-size: 250%;
+    color: $light;
+    text-align: right;
+    font-family: 'Bree Serif', serif;
+}
+.banner .greeting2 {
+    margin-top:15px;
+    font-size: 250%;
+    color: $light;
+    text-align: right;
+    font-family: 'Bree Serif', serif;
+}
+.intro {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    text-align: center;
+    color: $dark;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 20px; 
+}
+.bottom{
+    margin: -16px 0 40px 20px;
+    height: $size * 1.5;
+    width: $size * 2.8;
+    border-bottom-left-radius: $size * 2;
+    border-bottom-right-radius: $size * 2;
+    background-color: $bg;
+    }
+#promo {
+    display: flex;
+    flex-direction: row;
+    font-size: 0;
+    padding: 0 1rem 1rem 0;
+    background-color: $dark;
+    color:$light;
+}
+
+#promo > .column {
+    
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding: 1rem 2rem;
+    text-align: center;
+    vertical-align: top;
+}
+
+#promo > .column .heading {
+    font-size: 150%;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+#skills {
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+}
+
+#myskills {
+    padding: 4rem 0;
+    font-size: 70px;
+    text-align: center;
+    font-weight: 900;
+    font-family: 'Righteous', cursive;
+    color: $blue;
+}
+.progress {
+    display: flex;
+    height: $bar_height;
+    margin-bottom: 0.5rem;
+  }
+  
+  .progress .label {
+    flex: 0 0 8rem;
+    background-color: $dark;
+    color: $light;
+    line-height: $bar_height;
+    height: $bar_height;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  
+  .progress .bar {
+    flex: 1;
+    background-color: $light;
+    height: $bar_height;
+  }
+  
+  .progress .blue {
+    background-color: $blue;
+    height: $bar_height;
+  }
+    
+  .per li {
+      display: flex;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      list-style-type: none;
+      line-height: $bar_height;
+      background-color: $dark;
+      color: $blue;
+      font-family: 'Yellowtail';
+      padding: 0 1rem;
+      
+  }
+   
+  .bars {
+      flex:1;
+      display: flex;
+      flex-direction: column;
+  }
+  #portfolio {
+    margin-top: 2rem;
+    background-color: $brown;
+    padding: 4rem 4rem;
+  }
+  
+  #portfolio h1 {
+    font-family: 'Black Ops One', cursive;
+    font-size:350%;
+    text-align: center;
+    color: $light;
+    margin-bottom: 2rem;
+  }
+  
+  .cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  
+  .card {
+    width: 32%;
+    background-color: $light;
+    padding: 8px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    background-color: $olive;
+  }
+  .card .preview {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card .body {
+    background-color: $light;
+    padding: 1rem;
+    color: $brown;
+  }
+  #aboutme {
+    font-family: 'Abhaya Libre', serif;
+    padding: 5rem 2rem;
+    color:$brown;
+    img {
+        border-radius: 70%;
+        width: 280px;
+        height: 350px;
+        margin: 50px 100px 0 0;
+    }
+    .picab {
+        display: flex;
+
+    
+        .aboutmeh
+            {
+                margin-right: 3rem;
+                font-size: 1.5rem;
+                display: flex;
+                flex-direction: column;
+                width: 43%;
+                    p{
+                        margin: 1.1rem 0;
+                    }
+            }
+        }    
+  h1 {
+    font-size: 5rem;
+    text-align: center;
+    
+    }
+}
+  #contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: $blue;
+      padding-bottom: 3rem;
+    
+    h1 {    
+     font-family: 'Alegreya', serif;
+      font-size: 5rem;
+      color: $light;
+      padding: 3rem;
+      margin-bottom: 1rem;
+      
+       }
+  }
+  .form {
+    text-align: center;
+    display: flex;
+    }
+    input {
+        margin: 1rem 2rem;
+        background-color: $blue;
+        font-size: 1.2rem;
+        color: $dark;
+        border:solid $light;
+        padding: 1rem 2rem;
+        font-family: 'Bree Serif', serif;
+    }
+    
+    h2 {
+        font-family: 'Alegreya', serif;
+        margin-top: 2rem;
+        font-size: 3rem;
+        color: $dark;
+        
+
+
+    }
+    #msg {
+        margin-top: 2rem;
+        padding: 30px 150px;
+        font-size: 200%;
+        color: $brown;
+        background-color: $light;
+        border: solid $olive 2px;
+        
+    }
+    #send {
+        background-color: $light;
+        cursor: pointer;
+        color:$olive;
+        border-color: $olive;
+    }
+    input::placeholder {
+        color: $light;
+    
+    }
+    #send:hover {
+        background-color: $olive;
+        transition: all ease-in-out 150ms;
+        color: $light;
+        border-color: $light;
+    }
+    #footer {
+        font-family: 'Black Ops One', cursive;
+        display: flex;
+        flex-direction: column;
+        
+        .nice {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: baseline;  
+
+            .foot1 {
+                width:20%;
+                border-bottom: 5px $blue solid;
+            }
+            .foot2 {
+                width:20%;
+                border-bottom: 5px $blue solid;
+
+            }
+            h1 {
+                margin-top: 5rem;
+                
+            }
+            }
+            p {
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bold;
+                margin-top: 4rem;
+                font-size: 80%;
+                text-align: center;
+            }
+    }
